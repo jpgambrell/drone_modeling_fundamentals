@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: LGE-First.ma
-//Last modified: Wed, Aug 16, 2017 04:51:06 PM
+//Name: LGE-First.0001.ma
+//Last modified: Wed, Aug 16, 2017 04:50:18 PM
 //Codeset: UTF-8
 requires maya "2017";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiPhotometricLight"
@@ -24449,15 +24449,6 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-select -ne :modelPanel3ViewSelectedSet;
-	setAttr ".ihi" 0;
-	setAttr -s 5 ".dsm";
-select -ne :modelPanel2ViewSelectedSet;
-	setAttr ".ihi" 0;
-	setAttr -s 5 ".dsm";
-select -ne :modelPanel4ViewSelectedSet;
-	setAttr ".ihi" 0;
-	setAttr -s 5 ".dsm";
 connectAttr "LGE.di" "engineShell.do";
 connectAttr "LGE.di" "top_magnet.do";
 connectAttr "LGE.di" "pPipe3.do";
@@ -24922,4 +24913,4 @@ connectAttr "groupId35.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId36.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId37.msg" ":initialShadingGroup.gn" -na;
 connectAttr "aiPhotometricLight1.iog" ":defaultLightSet.dsm" -na;
-// End of LGE-First.ma
+// End of LGE-First.0001.ma
